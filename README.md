@@ -75,7 +75,21 @@ radar-iot/
 ├── radar_processing/
 └── telegram_alertes/
 ```
+## 📷 Montage matériel
 
+![Montage](Images/montage_hardware/montage.jpg)
+
+## 📊 Dashboard Node-RED
+
+![Dashboard](Images/dashboard/dashboard.png)
+
+## 🤖 Alertes Telegram
+
+![Telegram](Images/telegram_alertes/telegram.png)
+
+## 📡 Visualisation Radar
+
+![Radar](Images/radar_processing/radar.png)
 ---
 
 ## ⚙️ Architecture du Système
