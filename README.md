@@ -69,11 +69,11 @@ radar-iot/
 ├── NodeRED/
 │   └── flow.json                ← Flow Node-RED complet (import direct)
 │
-└── Photos/
-    ├── montage_hardware.jpg     ← Photo du montage physique
-    ├── dashboard.png            ← Capture du dashboard Node-RED
-    ├── telegram_alertes.png     ← Capture des alertes Telegram
-    └── radar_processing.png     ← Capture du visualisateur Processing
+└── Images/
+├── dashboard/
+├── montage_hardware/
+├── radar_processing/
+└── telegram_alertes/
 ```
 
 ---
