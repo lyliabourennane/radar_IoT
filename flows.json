@@ -1,0 +1,31 @@
+[
+    {
+        "id": "9b9e030f26f8f53d",
+        "type": "function",
+        "z": "6a32cfcac1990d04",
+        "name": "function 1",
+        "func": "var dist = msg.payload.dist;\nvar angle = msg.payload.angle;\n\nif (dist > 40) dist = 40;\n\nif (dist < 40) {\n    msg.payload.status = \"OBSTACLE DETECTE !\";\n} else {\n    msg.payload.status = \"Libre\";\n}\n\nmsg.payload.dist = dist;\nvar chartMsg = { payload: dist };\n\nvar count = context.get('count') || 0;\nif (dist < 40) {\n    count++;\n    context.set('count', count);\n    msg.payload.count = count;\n}\n\nif (dist < 40) {\n    msg.payload.heure = new Date().toLocaleTimeString();\n}\n\nvar telegramMsg = { payload: dist };\n\nreturn [msg, chartMsg, telegramMsg];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "9fdf9c4577fbfe12",
+                "dd093c3477013bae",
+                "317d4a82d865cfcb",
+                "13d82c98a441c998"
+            ],
+            [
+                "4166d400f62ed6f7"
+            ],
+            [
+                "895e3496420d3971"
+            ]
+        ]
+    }
+]
